@@ -18,7 +18,7 @@ function App() {
       </div>
       <div className="navbar-social">
         <a href="https://www.instagram.com/moncherisocial/" className="social-icon" aria-label="Instagram"><SiInstagram size={28} /></a>
-        <a href="#" className="social-icon" aria-label="Gmail"><SiGmail size={28} /></a>
+        <a href="mailto:moncherisocialagency@gmail.com" className="social-icon" aria-label="Gmail"><SiGmail size={28} /></a>
         <a href="https://www.tiktok.com/@moncherisocial" className="social-icon" aria-label="TikTok"><SiTiktok size={28} /></a>
       </div>
     </div>

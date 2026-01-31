@@ -66,6 +66,14 @@ body {
   overflow: hidden;
 }
 
+/* Enable scrolling in landscape mode on mobile */
+@media (orientation: landscape) and (max-height: 600px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
  .app {
   background: url('./assets/background.png') center center/cover no-repeat;
   background-size: cover;
@@ -81,6 +89,18 @@ body {
   font-family: 'Playfair Display', Georgia, serif;
   overflow: hidden;
   padding: 3vw 3vw;
+}
+
+/* Landscape mode adjustments for mobile */
+@media (orientation: landscape) and (max-height: 600px) {
+  .app {
+    min-height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.5vw 3vw;
+    justify-content: flex-start;
+    padding-top: 2rem;
+  }
 }
 
 .app::before {
@@ -205,6 +225,46 @@ body {
   .logo-image {
     width: 200px;
     max-width: 60vw;
+  }
+}
+
+/* Landscape mode on mobile devices */
+@media (orientation: landscape) and (max-height: 600px) {
+  .main-content {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+  }
+  
+  .coming-soon {
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin: 0 0 1rem 0;
+  }
+  
+  .announcement {
+    font-size: clamp(0.7rem, 1.8vw, 1rem);
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .infinite-progress-bar-wrapper {
+    margin: 1rem 0 1rem 0;
+  }
+  
+  .infinite-progress-bar {
+    width: 150px;
+    max-width: 60vw;
+    height: 4px;
+  }
+  
+  .navbar-social {
+    position: static;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .navbar-social .social-icon svg {
+    width: 24px;
+    height: 24px;
   }
 }
 
